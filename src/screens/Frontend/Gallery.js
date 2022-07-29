@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet, Image } from 'react-native'
+import { View, Button, Text, StyleSheet, Image } from 'react-native'
 import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
@@ -9,7 +9,10 @@ export default function Gallery() {
                 {/* another methods to use images
                 source={require("../../Assets/Images/logo.jpg")} */}
                 {/* <Text style={styles.h1}>Gallery</Text> */}
+
             </View>
+            <Button title="Click Me" onPress={() => { (alert("Clicked")) }} />
+
         </View>
     )
 }
