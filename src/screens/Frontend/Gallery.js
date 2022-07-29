@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Button, Text, StyleSheet, Image } from 'react-native'
+import { View, Button, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
 import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
@@ -11,7 +11,10 @@ export default function Gallery() {
                 {/* <Text style={styles.h1}>Gallery</Text> */}
 
             </View>
-            <Button title="Click Me" onPress={() => { (alert("Clicked")) }} />
+            <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
+            <TouchableOpacity style={styles.button}>
+                <Text color="white">AWAIS S</Text>
+            </TouchableOpacity>
 
         </View>
     )
@@ -47,5 +50,13 @@ const styles = StyleSheet.create({
     image: {
         width: 200,
         height: 200
-    }
+    },
+    button: {
+        paddingHorizontal: 20,
+        paddingVertical: 8,
+        borderRadius: 4,
+        color: "black",
+        backgroundColor: "#efb094",
+        marginTop: 12,
+    },
 })
