@@ -5,7 +5,7 @@ export default function Gallery() {
     return (
         <ScrollView>
 
-            <View style={styles.flexContainer}>
+            <View style={[styles.flexContainer, { paddingVertical: 40 }]}>
                 {/* .................1....................... */}
                 <View style={[styles.box, styles.flexCenter]}>
                     <Image style={styles.image} source={logo} />
