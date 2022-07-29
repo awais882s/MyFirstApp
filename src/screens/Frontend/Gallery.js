@@ -3,62 +3,24 @@ import { ScrollView, View, Button, Text, StyleSheet, Image, TouchableOpacity, To
 import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
-        <ScrollView>
 
-            <View style={[styles.flexContainer, { paddingVertical: 40 }]}>
-                {/* .................1....................... */}
-                <View style={[styles.box, styles.flexCenter]}>
-                    <Image style={styles.image} source={logo} />
-                    {/* another methods to use images
+        <View style={[styles.flexContainer, { paddingVertical: 40 }]}>
+            <View style={[styles.box, styles.flexCenter]}>
+                <Image style={styles.image} source={logo} />
+                {/* another methods to use images
                 source={require("../../Assets/Images/logo.jpg")} */}
-                    {/* <Text style={styles.h1}>Gallery</Text> */}
-
-                </View>
-                <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
-                <TouchableOpacity style={styles.button} activeOpacity={0.5}>
-                    <Text>Touchable Opacity</Text>
-                </TouchableOpacity>
-                <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
-                    <Text>
-                        Touchable HighLight
-                    </Text>
-                </TouchableHighlight>
-                {/* .................2.................... */}
-                <View style={[styles.box, styles.flexCenter]}>
-                    <Image style={styles.image} source={logo} />
-                    {/* another methods to use images
-                source={require("../../Assets/Images/logo.jpg")} */}
-                    {/* <Text style={styles.h1}>Gallery</Text> */}
-
-                </View>
-                <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
-                <TouchableOpacity style={styles.button} activeOpacity={0.5}>
-                    <Text>Touchable Opacity</Text>
-                </TouchableOpacity>
-                <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
-                    <Text>
-                        Touchable HighLight
-                    </Text>
-                </TouchableHighlight>
-                {/* ................3.................... */}
-                <View style={[styles.box, styles.flexCenter]}>
-                    <Image style={styles.image} source={logo} />
-                    {/* another methods to use images
-                source={require("../../Assets/Images/logo.jpg")} */}
-                    {/* <Text style={styles.h1}>Gallery</Text> */}
-
-                </View>
-                <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
-                <TouchableOpacity style={styles.button} activeOpacity={0.5}>
-                    <Text>Touchable Opacity</Text>
-                </TouchableOpacity>
-                <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
-                    <Text>
-                        Touchable HighLight
-                    </Text>
-                </TouchableHighlight>
+                {/* <Text style={styles.h1}>Gallery</Text> */}
             </View>
-        </ScrollView>
+            <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
+            <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+                <Text>Touchable Opacity</Text>
+            </TouchableOpacity>
+            <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
+                <Text>
+                    Touchable HighLight
+                </Text>
+            </TouchableHighlight>
+        </View>
     )
 }
 const styles = StyleSheet.create({
