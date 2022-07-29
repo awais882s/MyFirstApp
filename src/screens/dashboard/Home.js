@@ -9,8 +9,8 @@ export default function Home() {
 }
 const styles = StyleSheet.create({
     flexContainer: {
-        // justifyContent: "center",
-        // alignItems: "center",
+        justifyContent: "center",
+        alignItems: "center",
         backgroundColor: "white",
         flex: 1
     },
