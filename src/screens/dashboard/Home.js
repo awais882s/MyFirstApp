@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native'
 export default function Home() {
     return (
         <View style={styles.flexContainer}>
-            <View style={styles.box}>
+            <View style={[styles.box, styles.flexCenter]}>
                 <Text style={styles.h1}>Home</Text>
             </View>
         </View>
@@ -15,6 +15,10 @@ const styles = StyleSheet.create({
         alignItems: "center",
         backgroundColor: "white",
         flex: 1
+    },
+    flexCenter: {
+        alignItems: "center",
+        justifyContent: "center"
     },
     h1: {
         fontSize: 48,
