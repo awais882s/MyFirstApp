@@ -1,9 +1,10 @@
 import React from 'react'
-import Home from './src/screens/dashboard/Home'
+import Frontend from './src/screens/Frontend'
+// import Home from './src/screens/Frontend/Home'
 export default function App() {
   return (
     <>
-      <Home />
+      <Frontend />
     </>
   )
 }
