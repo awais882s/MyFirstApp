@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     box: {
         width: 200,
         height: 200,
-        backgroundColor: "green",
+        backgroundColor: "#00bbf9",
         borderRadius: 10
     }
 })
