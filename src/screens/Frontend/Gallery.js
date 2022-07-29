@@ -1,10 +1,11 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, Image } from 'react-native'
 export default function Gallery() {
     return (
         <View style={styles.flexContainer}>
             <View style={[styles.box, styles.flexCenter]}>
-                <Text style={styles.h1}>Gallery</Text>
+                <Image style={styles.image} source={{ uri: "https://www.reactnative.express/static/logo.png" }} />
+                {/* <Text style={styles.h1}>Gallery</Text> */}
             </View>
         </View>
     )
@@ -29,12 +30,16 @@ const styles = StyleSheet.create({
     box: {
         width: 250,
         height: 250,
-        backgroundColor: "#00bbf9",
+        backgroundColor: "#efb094",
         borderRadius: 10,
         borderWidth: 5,
         borderBottomColor: "#a0e426",
         borderTopColor: "#390099",
         borderLeftColor: "#fa7921",
         borderRightColor: "#9b52de"
+    },
+    image: {
+        width: 200,
+        height: 200
     }
 })
