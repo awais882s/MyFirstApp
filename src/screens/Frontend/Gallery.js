@@ -1,10 +1,13 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image } from 'react-native'
+import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
         <View style={styles.flexContainer}>
             <View style={[styles.box, styles.flexCenter]}>
-                <Image style={styles.image} source={{ uri: "https://www.reactnative.express/static/logo.png" }} />
+                <Image style={styles.image} source={logo} />
+                {/* another methods to use images
+                source={require("../../Assets/Images/logo.jpg")} */}
                 {/* <Text style={styles.h1}>Gallery</Text> */}
             </View>
         </View>
