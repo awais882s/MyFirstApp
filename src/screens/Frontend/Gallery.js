@@ -1,27 +1,64 @@
 import React from 'react'
-import { View, Button, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight } from 'react-native'
+import { ScrollView, View, Button, Text, StyleSheet, Image, TouchableOpacity, TouchableHighlight } from 'react-native'
 import logo from "../../Assets/Images/logo.jpg";
 export default function Gallery() {
     return (
-        <View style={styles.flexContainer}>
-            <View style={[styles.box, styles.flexCenter]}>
-                <Image style={styles.image} source={logo} />
-                {/* another methods to use images
+        <ScrollView>
+
+            <View style={styles.flexContainer}>
+                {/* .................1....................... */}
+                <View style={[styles.box, styles.flexCenter]}>
+                    <Image style={styles.image} source={logo} />
+                    {/* another methods to use images
                 source={require("../../Assets/Images/logo.jpg")} */}
-                {/* <Text style={styles.h1}>Gallery</Text> */}
+                    {/* <Text style={styles.h1}>Gallery</Text> */}
 
+                </View>
+                <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
+                <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+                    <Text>Touchable Opacity</Text>
+                </TouchableOpacity>
+                <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
+                    <Text>
+                        Touchable HighLight
+                    </Text>
+                </TouchableHighlight>
+                {/* .................2.................... */}
+                <View style={[styles.box, styles.flexCenter]}>
+                    <Image style={styles.image} source={logo} />
+                    {/* another methods to use images
+                source={require("../../Assets/Images/logo.jpg")} */}
+                    {/* <Text style={styles.h1}>Gallery</Text> */}
+
+                </View>
+                <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
+                <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+                    <Text>Touchable Opacity</Text>
+                </TouchableOpacity>
+                <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
+                    <Text>
+                        Touchable HighLight
+                    </Text>
+                </TouchableHighlight>
+                {/* ................3.................... */}
+                <View style={[styles.box, styles.flexCenter]}>
+                    <Image style={styles.image} source={logo} />
+                    {/* another methods to use images
+                source={require("../../Assets/Images/logo.jpg")} */}
+                    {/* <Text style={styles.h1}>Gallery</Text> */}
+
+                </View>
+                <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
+                <TouchableOpacity style={styles.button} activeOpacity={0.5}>
+                    <Text>Touchable Opacity</Text>
+                </TouchableOpacity>
+                <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
+                    <Text>
+                        Touchable HighLight
+                    </Text>
+                </TouchableHighlight>
             </View>
-            <Button title="Click Me" color="red" onPress={() => { (alert("Clicked")) }} />
-            <TouchableOpacity style={styles.button} activeOpacity={0.5}>
-                <Text>Touchable Opacity</Text>
-            </TouchableOpacity>
-            <TouchableHighlight style={styles.button} onPress={() => { (alert("Touchable HighLight")) }} underlayColor="green" >
-                <Text>
-                    Touchable HighLight
-                </Text>
-            </TouchableHighlight>
-
-        </View>
+        </ScrollView>
     )
 }
 const styles = StyleSheet.create({
@@ -33,7 +70,8 @@ const styles = StyleSheet.create({
     },
     flexCenter: {
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "center",
+        marginTop: 10,
     },
     h1: {
         fontSize: 48,
@@ -42,6 +80,7 @@ const styles = StyleSheet.create({
         color: "black"
     },
     box: {
+        marginBottom: 8,
         width: 250,
         height: 250,
         backgroundColor: "#efb094",
@@ -51,6 +90,7 @@ const styles = StyleSheet.create({
         borderTopColor: "#390099",
         borderLeftColor: "#fa7921",
         borderRightColor: "#9b52de"
+
     },
     image: {
         width: 200,
