@@ -1,5 +1,6 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import { Colors } from 'react-native/Libraries/NewAppScreen'
 export default function App() {
   return (
     <View style={styles.flexContainer}>
@@ -11,12 +12,13 @@ const styles = StyleSheet.create({
   flexContainer: {
     // justifyContent: "center",
     // alignItems: "center",
-    backgroundColor: "red",
+    backgroundColor: "white",
     flex: 1
   },
   h1: {
     fontSize: 48,
     fontWeight: "bold",
-    textAlign: "center"
+    textAlign: "center",
+    color: "black"
   }
 })
