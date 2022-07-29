@@ -3,8 +3,9 @@ import { View, Text, StyleSheet } from 'react-native'
 export default function Home() {
     return (
         <View style={styles.flexContainer}>
-            <View style={styles.box}></View>
-            {/* <Text style={styles.h1}>Home Page </Text> */}
+            <View style={styles.box}>
+                <Text style={styles.h1}>Home</Text>
+            </View>
         </View>
     )
 }
@@ -22,8 +23,8 @@ const styles = StyleSheet.create({
         color: "black"
     },
     box: {
-        width: 200,
-        height: 200,
+        width: 250,
+        height: 250,
         backgroundColor: "#00bbf9",
         borderRadius: 10
     }
